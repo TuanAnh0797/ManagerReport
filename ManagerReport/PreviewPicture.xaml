@@ -1,0 +1,18 @@
+﻿<Window Name="mywindow" x:Class="ManagerReport.PreviewPicture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManagerReport"
+        mc:Ignorable="d"
+        
+        Title="PreviewPicture" Height="450" Width="800" KeyDown="mywindow_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Name="txb_NameImage" Grid.Row="0"></TextBlock>
+        <Image Grid.Row="1" Name="ImagePreview" Margin="30" Source="{Binding}"></Image>
+    </Grid>
+</Window>
